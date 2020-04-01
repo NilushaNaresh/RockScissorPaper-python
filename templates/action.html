@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block head %}
+  <title> Action </title>
+{% endblock %}
+
+{% block content %}
+<a href="{{ url_for('home') }}"> GO HOME </a>
+      <header>
+          <p>Hi, welcome to the game!! </p>
+      </header>
+<h2>Press any one on the three buttons of your choice to start playing with the computer</h2>
+<h2><u>Player</u></h2>
+<div class="play-buttons">
+    <button type="button" name="rock" value="1">Rock
+    {% if value == 1 %}
+        {{ rock }}
+    {% end if %}
+    </button>
+    <button type="button" name="scissors" value="2">Scissors</button>
+    <button type="button" name="paper" value="3">Paper</button>
+</div>
+{% endblock %}

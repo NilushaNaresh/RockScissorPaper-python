@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block head %}
+  <title> Home </title>
+{% endblock %}
+
+{% block content %}
+  <h1>Rock Paper Scissor</h1>
+  <h2>lets begin!!!!!{{ name }}</h2>
+  <form action="/action" method="POST">
+      <h2>Please hit the button to start playing:
+      <input type="submit" value="lets start">
+  </form>
+
+{% endblock %}
+
+
